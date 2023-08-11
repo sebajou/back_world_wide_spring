@@ -29,7 +29,22 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 This is a CRUD ta manage Mongo Database with a future world wide data from spring water. This will collect data like name brand name, composition, location, geology ...
-This repository is a microservie. Other microservice will be provided. 
+This repository is a microservice. Other microservice will be provided. 
+The ambition of this project is to create miriade of microservices to deal with collecting (API request and scrapping), provide, show and illustrate data related to spring arround the world. 
+Back end microservices will be: 
++ RestAPI CRUD on MongoDB with a NestJS API. 
+  + This CRUD will later provide a GraphQL endpoint
++ FastAPI collector. This microservice collect data from external API and from scrapping
++ A microservice to deal with geographic data. 
++ A FastAPI microservices to manage LLM model and chatbot abble to respond to question about our data (the architecture for this part will be derterminate in the future). 
+Front End services: 
++ Angular front end will display spring store in database. 
++ In a long term futur a React front will provide a chatbot powered with LLM. 
+The goal of this project is not to proide services about spring water, it is a side project design to play with many technology and illustrate my skills.
+
+<p align="center">
+  <img src="images/archi_spring.jpg" width="700" height="350">
+</p>
 
 ## Installation
 
