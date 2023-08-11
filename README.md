@@ -46,6 +46,8 @@ The goal of this project is not to proide services about spring water, it is a s
   <img src="images/archi_spring.jpg" width="700" height="350">
 </p>
 
+The aim is also to play with docker, kubernetes and all toy avaible for happy developer. 
+
 ## Installation
 
 ```bash
