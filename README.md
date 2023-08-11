@@ -28,6 +28,9 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+This is a CRUD ta manage Mongo Database with a future world wide data from spring water. This will collect data like name brand name, composition, location, geology ...
+This repository is a microservie. Other microservice will be provided. 
+
 ## Installation
 
 ```bash
