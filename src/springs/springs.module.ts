@@ -3,22 +3,19 @@ import { SpringsService } from './springs.service';
 import { SpringsController } from './springs.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Spring, SpringSchema } from './schema/springs.schema';
+import { SpringsSeed } from './schema/springs.seed'
+import { CommandModule } from 'nestjs-command';
 
-const username = encodeURIComponent('sebajou');
+// const username = encodeURIComponent(process.env.DATABASE_USER);
 
-const password = encodeURIComponent('xxxx');
+// const password = encodeURIComponent(process.env.DATABASE_PWD);
 
-const uri = `mongodb+srv://${username}:${password}@clusterexplorateur.jotdnw9.mongodb.net/?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://${username}:${password}@clusterexplorateur.jotdnw9.mongodb.net/?retryWrites=true&w=majority`;
 
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      'mongodb+srv://sebajou:xxxx@clustersprings.jotdnw9.mongodb.net/?retryWrites=true&w=majority',
-      {
-        dbName: 'db_springs',
-      },
-    ),
+    // MongooseModule.forRoot(uri),
     MongooseModule.forFeature(
       [
         {
