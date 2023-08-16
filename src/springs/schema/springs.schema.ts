@@ -13,17 +13,17 @@ export class Spring {
     name: string; 
 
     @Prop({ required: false})
-    composition: SpringComposition;
+    composition: SpringComposition[];
 
 
     @Prop({ required: false})
-    description: SpringComposition;
+    description: string;
     
     @Prop({ required: false})
     brand: string;
 
     @Prop({ required: false})
-    price: SpringPrice;
+    price: SpringPrice[];
 
     @Prop({ required: false})
     localisation: SpringLocalisation;
