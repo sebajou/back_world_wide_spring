@@ -1,27 +1,28 @@
 export class SpringComposition {
     elementName: string;
     formula: string;
-    quantity: Float32Array;
+    quantity: number;
     unity: string;
 }
 
 export class SpringPrice {
-    price: Float32Array;
+    price: number;
     money: string;
     by: string
+    country: string
 }
 
 export class SpringLocalisation {
-    longiture: Float32Array;
-    lattitude: Float32Array;
+    longitude: number;
+    lattitude: number;
 }
 
 export class SpringEntity {
     name: string;
-    composition: SpringComposition;
+    composition: SpringComposition[];
     description: string;
     brand: string;
-    price: SpringPrice;
+    price: SpringPrice[];
     localisation: SpringLocalisation;
-    startExplotationDate: Date;
+    startExploitationDate: Date;
 }

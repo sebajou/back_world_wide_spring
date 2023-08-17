@@ -8,7 +8,7 @@ export class CreateSpringDto {
     name: string;
 
     @IsOptional()
-    composition: SpringComposition;
+    composition: SpringComposition[];
 
     @IsOptional()
     @IsString()
@@ -21,7 +21,7 @@ export class CreateSpringDto {
     brand: string;
 
     @IsOptional()
-    price: SpringPrice;
+    price: SpringPrice[];
 
     @IsOptional()
     localisation: SpringLocalisation;
