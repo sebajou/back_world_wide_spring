@@ -8,9 +8,9 @@ async function bootstrap() {
   });
 
   try {
-    console.log("let's try")
+    console.log("let's try");
     await app.select(CommandModule).get(CommandService).exec();
-    console.log("seams to work")
+    console.log('seams to work');
   } catch (error) {
     console.error(error);
     await app.close();

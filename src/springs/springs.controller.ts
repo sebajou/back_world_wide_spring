@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Put,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { SpringsService } from './springs.service';
 import { CreateSpringDto } from './dto/create-spring.dto';
 import { UpdateSpringDto } from './dto/update-spring.dto';
@@ -23,9 +31,11 @@ export class SpringsController {
   }
 
   @Put(':id')
-  update(@Param('id') id: string, 
-  @Body() 
-  updateSpringDto: UpdateSpringDto) {
+  update(
+    @Param('id') id: string,
+    @Body()
+    updateSpringDto: UpdateSpringDto,
+  ) {
     return this.springsService.update(id, updateSpringDto);
   }
 

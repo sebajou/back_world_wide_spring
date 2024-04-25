@@ -23,7 +23,6 @@ export class SpringsService {
 
   async findOne(id: string) {
     return this.springModel.findById(id);
-
   }
 
   async update(id: string, updateSpringDto: UpdateSpringDto) {
